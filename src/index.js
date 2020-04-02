@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
 import allReducer from './reducers';
+import { Provider } from 'react-redux'; // Connect global state STORE or our entire app
 
 const store = createStore(
   allReducer,
@@ -12,9 +13,9 @@ const store = createStore(
 );
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
