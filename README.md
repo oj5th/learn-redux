@@ -1,3 +1,18 @@
+## Step from the scratch
+$ nvm use 8.16.0
+$ npx create-react-app learn-redux
+$ cd learn-redux
+$ npm install redux react-redux
+
+## Remove the following on this tutorial:
+/src/App.test.js
+/src/App.css
+/src/logo.svg
+
+Then follow commits
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
