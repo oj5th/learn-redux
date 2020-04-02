@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <h1>Counter {counter}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
+      <button onClick={() => dispatch(increment(5))}>+</button>
       <button onClick={() => dispatch(decrement())}>-</button>
       {isLogged ? <h3>Valuable Information I shouldn't see</h3> : ''}
     </div>
